@@ -28,4 +28,4 @@ sudo mkdir -p /etc/apt/keyrings
  docker-compose up --build -d
 
 
- echo 
+ echo "done!"
