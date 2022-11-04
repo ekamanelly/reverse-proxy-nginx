@@ -2,15 +2,15 @@
  
  # update and install apt package curl gnupg  
  sudo apt-get update -y
- sudo apt-get install -y \
+ sudo apt-get install  \
     ca-certificates \
     curl \
     gnupg \
     lsb-release
 
  # Add Docker’s official GPG key:
-sudo mkdir -p /etc/apt/keyrings
- curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg   
+sudo mkdir -p /etc/apt/keyrings -y
+ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg  -y 
 
 # Use the following command to set up the repository
   echo \
@@ -20,12 +20,13 @@ sudo mkdir -p /etc/apt/keyrings
 # install docker engine
  sudo apt-get update -y
  sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin -y
-
+ sudo apt  install docker-compose -y
 # verify docker was install
- docker -v
+ sudo docker -v
+ sudo docker-compose -v
 
 # only build containers with changed/ altered file 
- docker-compose up --build -d
+ sudo docker-compose up --build -d
 
 
  echo "done!"
