@@ -29,4 +29,4 @@ sudo mkdir -p /etc/apt/keyrings -y
  sudo docker-compose up --build -d
 
 
- echo "done!"
+ echo "wooohoooo done!"
