@@ -2,12 +2,12 @@
 
 ## The entire app workflow 
 
-clone repo
-cd into the primary folder
-run the `install-docker-n-compose-container.sh` too install docker on host and spin up docker compose
-or 
-intall docker manually, digital ocean had a great docs 
-then run `docker-compose up`
+- clone repo
+- cd into the primary folder
+- run the `install-docker-n-compose-container.sh` too install docker on host and spin up docker compose
+-  
+- intall docker manually, digital ocean had a great docs 
+- then run `docker-compose up`
 
 
 ## Backend development workflow
